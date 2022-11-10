@@ -13,7 +13,7 @@ services:
     command: ["run", "-d", "-c", "/etc/krakend/krakend.json"]
     depends_on:
       - fake_api
-      - jaeger
+      # - jaeger
   grafana:
     image: grafana/grafana:9.1.2
     ports:
