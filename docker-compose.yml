@@ -75,12 +75,12 @@ services:
     build:
       context: images/spa-auth-web
     ports:
-      - "3000:3000"
+      - "3001:3001"
   jwt_revoke:
     build:
       context: images/jwt-revoker
     ports:
-      - "9000:8080"
+      - "9001:8081"
     depends_on:
       - krakend_ce
     restart: always
